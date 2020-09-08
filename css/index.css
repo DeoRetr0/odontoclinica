@@ -1,0 +1,69 @@
+
+@font-face {
+    font-family: 'print_clearlyregular';
+    src: url('princ-webfont.woff2') format('woff2'),
+         url('princ-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    background-color: #ecf0f1;
+    font-family: 'Inria Sans', sans-serif;
+
+}
+
+.brand-logo{
+    margin-left: 10px
+}
+img{
+    margin: 0px;
+    height: 60px;
+    width: 70px;
+}
+
+#nav-fixa li{
+    padding: 10px;
+    margin-top: 0px;
+    padding: 7px;
+}
+
+#banner{
+    background-image: url("bannerFundo.jpg");
+    background-size: cover;
+    height: 400px;
+    background-repeat: no-repeat;
+}
+
+#banner button{
+    margin-top: 200px;
+    margin-left: 100px;
+    background-color: #27ae60;
+    font-family: 'Inria Sans', sans-serif;
+
+}
+.titulo{
+    text-align: center;
+    font-family: 'print_clearlyregular';
+}
+
+.carousel{
+    margin-top: auto;
+}
+
+.card-image img{
+    width: 100%;
+    height: auto;
+}
+.card-title{
+    font-weight: bolder;
+}
+
+.card-content{
+    font-size: larger;
+    font-weight: bold;
+}
+.footer-copyright{
+    text-align: center;
+}
+
