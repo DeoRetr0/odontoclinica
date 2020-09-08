@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   <!--Import materialize.css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/index.css?version=11">
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
@@ -30,7 +30,7 @@
         <ul class="right hide-on-med-and-down ">
           <li><a href="#banner">Sobre</a></li>
           <li><a href="#equipe">Equipe</a></li>
-          <li><a href="#">Tratamentos</a></li>
+          <li><a href="#tratamento">Tratamentos</a></li>
           <li><a href="#">Clientes</a></li>
           <li><a href="#">Contatos</a></li>
         </ul>
@@ -41,26 +41,31 @@
   <ul class="sidenav" id="mobile-nav">
     <li><a href="#banner">Sobre</a></li>
     <li><a href="#equipe">Equipe</a></li>
-    <li><a href="#">Tratamentos</a></li>
+    <li><a href="#tratamento">Tratamentos</a></li>
     <li><a href="#">Clientes</a></li>
     <li><a href="#">Contatos</a></li>
   </ul>
   <!-- FIM DA NAVBAR -->
 
   <!-- BANNER -->
-  <div id="banner">
-    <button class="waves-effect waves-light btn">Agendamento</button>
-  </div>
+
+    <div class="parallax-container">
+      <div id="banner"></div>
+      <div class="parallax">
+          <h1>Recupere seu sorriso</h1>
+          <h2>Agende uma visita!</h2>
+        <button class="waves-effect waves-light btn">Agendamento</button>
+      </div>
+    </div>
   <!-- FIM DO BANNER -->
   
-  <div class="divider"></div>
-
   <!-- EQUIPE -->
   <div id="equipe">
     <div class="row">
       <div class="col s12 m2"></div>
-      <div class="carousel col s12 m4">
+      <div class="col s12 m4">
         <h2 class="titulo">Nossa Equipe</h2>
+        <div class="carousel">
         <div class="carousel-item card" href="#one!">
           <div class="card-image">
             <img src="img/doctor1.jpg">
@@ -91,12 +96,13 @@
             <p>Formado em 2012 por Harvard</p>
           </div>
         </div>
+        </div>
       </div>
   <!-- FIM DA EQUIPE -->
 
   <!-- TRATAMENTOS -->
       <div class="col s12 m4">
-        <h2 class="titulo">Tratamentos</h2>
+        <h2 id="tratamento" class="titulo">Tratamentos</h2>
         <ul class="collapsible expandable">
           <li>
             <div class="collapsible-header">Implantodontia (Implantes)</div>
@@ -135,7 +141,7 @@
   <!-- FIM DOS TRATAMENTOS -->
 
   <!-- FOOTER -->
-  <footer class="page-footer blue accent-3">
+  <footer class="page-footer">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
