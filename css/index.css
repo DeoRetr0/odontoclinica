@@ -1,91 +1,201 @@
-
 @font-face {
-    font-family: 'print_clearlyregular';
-    src: url('princ-webfont.woff2') format('woff2'),
-         url('princ-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "print_clearlyregular";
+  src: url("princ-webfont.woff2") format("woff2"),
+    url("princ-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
-body{
-    background-color: #ecf0f1;
-    font-family: 'Inria Sans', sans-serif;
-
+.bannerMobile{
+  display: none;
 }
 
-.brand-logo{
-    margin-left: 10px
-}
-img{
-    margin: 0px;
-    height: 60px;
-    width: 70px;
+body {
+  background-color: whitesmoke;
+  font-family: "Inria Sans", sans-serif;
 }
 
-#nav-fixa li{
-    padding: 10px;
-    margin-top: 0px;
-    padding: 7px;
+/* NAVBAR */
+
+.navbar-fixed img{
+  margin-left: 100px;
 }
 
-.parallax h1{
-    color: #ecf0f1;
+img {
+  margin: 0px;
+  height: 60px;
+  width: 70px;
 }
 
-.parallax h2{
-    font-weight: bold;
-}
-.parallax button{
-    background-color: #27ae60;
-    font-family: 'Inria Sans', sans-serif;
+.navbar-fixed span{
+  color: #2c3e50;
 }
 
-.parallax{
-    background: #2c3e50;
-    font-family: 'print_clearlyregular';
-    padding: 25px;
-    -webkit-clip-path: polygon(0 0, 0 500px, 1080px 0, 100px 0);
-    z-index: 4;
-    position: relative;
-
+#mobile-nav button{
+margin: 30px 20px 0px 20px;
 }
 
-#banner{
-    background-image: url("bannerFundo.jpg");
-    z-index: 2;
-    background-repeat: no-repeat;
+#nav-fixa li {
+  padding: 10px;
+  margin-top: 0px;
+  padding: 7px;
+}
+
+/* BANNER + BANNER MOBILE*/
+
+.banner {
+  position: relative;
+  width: 100%;
+  margin-bottom: 350px;
+}
+.esquerda,
+.direita {
+  position: absolute;
+  height: 300px;
+  width: 65%;
+}
+.esquerda {
+  left: 0;
+  top: 0;
+  background: #2c3e50;
+  font-family: "print_clearlyregular";
+  padding: 20px;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+  clip-path: polygon(0 0, 85% 0%, 50% 100%, 0% 100%);
+}
+.direita {
+  right: 0;
+  top: 0;
+  background-image: url("bannerFundo2.jpg");
+  background-position: 80%;
+  -webkit-clip-path: polygon(40% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(35% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+@media only screen and (max-width: 425px) {
+  .navbar-fixed img{
+    height: 55px;
+    margin-left: 0;
+  }
+  .banner{
+    display: none;
+  }
+  .bannerMobile{
+    display: initial;
+  }
+  .fundo{
+    background-image: url("bannerFundo2.jpg");
     background-size: cover;
-    position: relative;
-
-}
-.titulo{
-    text-align: center;
-    font-family: 'print_clearlyregular';
-}
-
-.carousel{
-    margin-top: -25vh;
-    height: 75vh;
-}
-
-.card-image img{
-    width: 100%;
-    height: auto;
-}
-.card-title{
+    background-repeat: no-repeat;
+    font-size: medium;
     font-weight: bolder;
+    color: #ecf0f1;
+    padding: 20px;
+  }
+  .fundo button{
+    box-shadow: 5px 10px #888888;
+    margin: 10px;
+  }
+}
+.esquerda h1, h2 {
+  color: #ecf0f1;
+  font-weight: bolder;
+  margin: 0;
 }
 
-.card-content{
-    font-size: larger;
-    font-weight: bold;
+.banner button {
+  font-family: "Inria Sans", sans-serif;
+  box-shadow: 5px 10px #888888;
+  margin-top: 50px;
 }
 
-.page-footer{
-    background-color: #2c3e50;
+#sobre h5{
+  font-weight: bolder;
+  padding: 5px;
+}
+#sobre h3{
+  color: #2c3e50;
+  font-weight: bolder;
 }
 
-.footer-copyright{
-    text-align: center;
+/* EQUIPE E TRATAMENTOS */
+
+#meio-do-site{
+  background-color: #ecf0f1;
+  padding-top: 40px;
 }
 
+.titulo {
+  text-align: center;
+  font-family: "print_clearlyregular";
+  color: #2c3e50;
+}
+
+.carousel {
+  margin-top: -25vh;
+  height: 100vh;
+}
+.card-image img {
+  width: 100%;
+  height: auto;
+}
+.card-title {
+  font-weight: bolder;
+}
+
+.card-content {
+  font-size: larger;
+  font-weight: bold;
+}
+
+#tratamento-lista {
+  margin: 10px;
+}
+
+
+/* FOOTER */
+.page-footer {
+  background-color: #2c3e50;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+
+/* DE VOLTA AO TOPO */
+#button {
+  display: inline-block;
+  background-color: #2c3e50;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "ᐃ";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}

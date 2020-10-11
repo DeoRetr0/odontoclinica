@@ -13,7 +13,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
   <script src="js/index.js"></script>
-  <title>Dr Phineas</title>
+  <link rel="icon" href="img/favicon.png">
+  <title>Cruzeiro Spa Bucal</title>
 </head>
 
 <body>
@@ -21,48 +22,81 @@
   <div class="navbar-fixed">
     <nav class="navbar blue accent-3">
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Dr Phineas</a>
+        <a href="#" class="brand-logo">
+          <img style="width: 100px" src="img/logo.png">
+        </a>
 
         <a href="#" class="sidenav-trigger" data-target="mobile-nav">
           <i class="material-icons">menu</i>
         </a>
 
         <ul class="right hide-on-med-and-down ">
-          <li><a href="#banner">Sobre</a></li>
+          <li><button class="waves-effect btn grey lighten-4"><span>Agendamento</span></button></li>
+          <li><a href="#sobre">Sobre</a></li>
           <li><a href="#equipe">Equipe</a></li>
           <li><a href="#tratamento">Tratamentos</a></li>
           <li><a href="#">Clientes</a></li>
-          <li><a href="#">Contatos</a></li>
+          <li><a href="#contatos">Contatos</a></li>
         </ul>
       </div>
     </nav>
   </div>
 
   <ul class="sidenav" id="mobile-nav">
-    <li><a href="#banner">Sobre</a></li>
+    <li><button class="waves-effect btn blue-grey darken-3"><span>Agendamento</span></button></li>
+    <li><a href="#sobre">Sobre</a></li>
     <li><a href="#equipe">Equipe</a></li>
     <li><a href="#tratamento">Tratamentos</a></li>
     <li><a href="#">Clientes</a></li>
-    <li><a href="#">Contatos</a></li>
+    <li><a href="#contatos">Contatos</a></li>
   </ul>
   <!-- FIM DA NAVBAR -->
 
   <!-- BANNER -->
 
-    <div class="parallax-container">
-      <div id="banner"></div>
-      <div class="parallax">
+    <div class="banner">
+      <div class="esquerda">
           <h1>Recupere seu sorriso</h1>
           <h2>Agende uma visita!</h2>
-        <button class="waves-effect waves-light btn">Agendamento</button>
+        <button class="waves-effect waves-light btn blue">Agendamento</button>
+      </div>
+      <div class="direita">
+      </div>
+    </div>
+    
+    <div class="bannerMobile">
+      <div class="fundo">
+          <h9>Recupere seu sorriso</h9><br>
+          <h9>Agende uma visita!</h9><br>
+        <button class="waves-effect waves-light btn blue">Agendamento</button>
       </div>
     </div>
   <!-- FIM DO BANNER -->
-  
+
+  <a id="button"></a>
+
+  <!-- SOBRE -->
+  <div id="sobre" class="row">
+    <div class="col s12 m2"></div>
+    <div class="col s12 m4">
+      <h3>Bem vindo a Odontoclínica do Dr Phineas Nazim</h1>
+        <p> Desde 2007, temos orgulho de utilizar as tecnicas mais modernas e equipamentos de primeira linha em buca de ajudar nossos clientes. Dr. Phineas e nossa equipe realizam um atendimento personalizado e amigável não comparavél a nenhum dentista da cidade.</p>
+    </div>
+    <div class="col s12 m4">
+      <h5 class="blue">Tudo que precisa em um lugar</h6>
+        <p>Nossa lista de serviços está sempre em expansão buscando atender a quaisquer necessidades que apareçam, tudo em um lugar só! Tá esperando o que? Agende uma visita de orçamento grátis e para nos conhecer.</p>
+      <h5 class="blue">Personalizado para você</h6>
+        <p>Seu plano de tratamento será criado para atender o seu caso, estilo de vida e objetivos. Não vai a um dentista faz tempo? Podemos ajudar. Nosso confortável escritório, equipe amigável e tratanmentos minimamente invasivos vão fazer com que se sinta em casa.</p>
+    </div>
+    <div class="col s12 m2"></div>
+
+  </div>
+  <!-- FIM DO SOBRE -->
   <!-- EQUIPE -->
+  <div id="meio-do-site">
   <div id="equipe">
     <div class="row">
-      <div class="col s12 m2"></div>
+      <div class="col s12 m1"></div>
       <div class="col s12 m4">
         <h2 class="titulo">Nossa Equipe</h2>
         <div class="carousel">
@@ -71,9 +105,9 @@
             <img src="img/doctor1.jpg">
           </div>
           <div class="card-content">
-            <span class="card-title">Dra Alicia Ashford</span>
-            <p>Cirurgião Dentista</p>
-            <p>Formado em 2012 por Harvard</p>
+            <span class="card-title">Dra. Alicia Ashford</span>
+            <p>Cirurgiã Dentista</p>
+            <p>Formado em 2004 pela UNB</p>
           </div>
         </div>
         <div class="carousel-item card" href="#two!">
@@ -81,9 +115,9 @@
             <img src="img/doctor2.jpg">
           </div>
           <div class="card-content">
-            <span class="card-title">Dra Juliana Valentine</span>
-            <p>Cirurgião Dentista</p>
-            <p>Formado em 2012 por Harvard</p>
+            <span class="card-title">Dra. Juliana Valentine</span>
+            <p>Dentista Infantojuvenil</p>
+            <p>Formado em 2002 pela UFRJ</p>
           </div>
         </div>
         <div class="carousel-item card" href="#three!">
@@ -91,19 +125,20 @@
             <img src="img/doctor3.jpg">
           </div>
           <div class="card-content">
-            <span class="card-title">Dr Phineas Nazin</span>
-            <p>Cirurgião Dentista</p>
-            <p>Formado em 2012 por Harvard</p>
+            <span class="card-title">Dr. Phineas Nazin</span>
+            <p>Dentista Geral</p>
+            <p>Formado em 2005 por Harvard</p>
           </div>
         </div>
         </div>
       </div>
   <!-- FIM DA EQUIPE -->
-
+  <div class="col s12 m1"></div>
+  <div class="col s12 m1"></div>
   <!-- TRATAMENTOS -->
-      <div class="col s12 m4">
+      <div id="tratamentos" class="col s12 m4">
         <h2 id="tratamento" class="titulo">Tratamentos</h2>
-        <ul class="collapsible expandable">
+        <ul id="tratamento-lista" class="collapsible expandable">
           <li>
             <div class="collapsible-header">Implantodontia (Implantes)</div>
             <div class="collapsible-body"><span>A implantodontia é a especialidade odontológica que reabilita a saúde bucal quando há perda de um ou mais dentes.
@@ -136,12 +171,13 @@
         </ul>
       </div>
     </div>
-    <div class="col s12 m2"></div>
+    <div class="col s12 m1"></div>
   </div>
+</div>
   <!-- FIM DOS TRATAMENTOS -->
 
   <!-- FOOTER -->
-  <footer class="page-footer">
+  <footer id="contatos" class="page-footer">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -159,14 +195,15 @@
           <ul>
             <li><a class="grey-text text-lighten-3" href="#!">SHCES Qd 105 Bloco B</a></li>
             <li><a class="grey-text text-lighten-3" href="#!">61 4002 8922</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">drphineasodonto@gmail.com</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">cruzeirospabucal@fakegmail.com</a></li>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.0983734782576!2d-47.945257335496706!3d-15.798766077270525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a305e0d0c1adf%3A0x2b632b2446918b0d!2sSHCES%20Q%20305%20Bloco%20F!5e0!3m2!1spt-BR!2sbr!4v1602387865422!5m2!1spt-BR!2sbr" width="200" height="100" frameborder="0" style="border-radius: 10px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-        © 2020 Dr Phineas
+        © 2020 Cruzeiro Spa Bucal<div>Logo made by <a href="https://www.designevo.com/logo-maker/" title="Free Online Logo Maker">DesignEvo free logo creator</a></div>
       </div>
     </div>
   </footer>
@@ -174,6 +211,4 @@
   <!--JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
-</body>
-
 </html>
