@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <!--Import Google Icon Font-->
@@ -17,14 +16,13 @@
   <link rel="icon" href="img/favicon.png">
   <title>Cruzeiro Spa Bucal</title>
 </head>
-
 <body>
   <!-- NAVBAR -->
   <div class="navbar-fixed">
     <nav class="navbar blue accent-3">
       <div class="nav-wrapper">
         <a href="#" class="brand-logo">
-          <img style="width: 100px" src="img/logo.png">
+          <img style="width: 100px" src="img/logo.png" alt="Logo da Clínica">
         </a>
 
         <a href="#" class="sidenav-trigger" data-target="mobile-nav">
@@ -33,7 +31,7 @@
 
         <ul class="right hide-on-med-and-down ">
           <li><button data-target="agendamento-modal"
-              class="waves-effect btn modal-trigger grey lighten-4"><span>Agendamento</span></button></li>
+              class="waves-effect btn modal-trigger grey lighten-4" alt="Fazer um agendamento"><span>Agendamento</span></button></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#equipe">Equipe</a></li>
           <li><a href="#tratamento">Tratamentos</a></li>
@@ -43,10 +41,9 @@
       </div>
     </nav>
   </div>
-
   <ul class="sidenav" id="mobile-nav">
     <li><button data-target="agendamento-modal"
-        class="waves-effect btn modal-trigger blue-grey darken-3"><span>Agendamento</span></button></li>
+        class="waves-effect btn modal-trigger blue-grey darken-3" alt="Fazer um agendamento"><span>Agendamento</span></button></li>
     <li><a href="#sobre">Sobre</a></li>
     <li><a href="#equipe">Equipe</a></li>
     <li><a href="#tratamento">Tratamentos</a></li>
@@ -54,7 +51,6 @@
     <li><a href="#contatos">Contatos</a></li>
   </ul>
   <!-- FIM DA NAVBAR -->
-
   <!-- MODAL DE AGENDAMENTO -->
   <div id="agendamento-modal" class="modal">
     <div class="modal-content">
@@ -62,7 +58,8 @@
         <input type="text" placeholder="Seu nome" maxlength="20">
         <div class="row">
           <input class="col" type="email" placeholder="Seu email" name="email" id="email" maxlength="35">
-          <input class="col" type="tel" inputmode="tel" placeholder="(XX) XXXXX-XXXX" name="telefone" id="telefone" maxlength="11">
+          <input class="col" type="tel" inputmode="tel" placeholder="(XX) XXXXX-XXXX" name="telefone" id="telefone"
+            maxlength="11">
         </div>
         <div class="input-field col">
           <select>
@@ -76,36 +73,39 @@
           </select>
           <label>Tratamento</label>
         </div>
-        <textarea placeholder="Deseja dizer algo a mais?" id="mensagem-textarea" class="materialize-textarea"></textarea>
+        <textarea placeholder="Deseja dizer algo a mais?" id="mensagem-textarea"
+          class="materialize-textarea"></textarea>
       </form>
     </div>
     <div class="modal-footer">
-      <button style="color: whitesmoke;" class="btn waves-effect waves-light modal-close waves-light waves-effect blue btn-flat" type="submit" name="action">Enviar<i class="material-icons right">send</i></button>
+      <button style="color: whitesmoke;"
+        class="btn waves-effect waves-light modal-close waves-light waves-effect blue btn-flat" type="submit"
+        name="action">Enviar<i class="material-icons right">send</i></button>
     </div>
   </div>
   <!-- FIM DA MODAL DE AGENDAMENTO -->
-
   <!-- BANNER -->
   <div id="sobre" class="banner">
     <div class="esquerda">
       <h1>Recupere seu sorriso</h1>
       <h2>Agende uma visita!</h2>
       <button data-target="agendamento-modal"
-        class="waves-effect waves-light btn modal-trigger blue">Agendamento</button>
+        class="waves-effect waves-light btn modal-trigger blue" alt="Fazer um agendamento">Agendamento</button>
     </div>
-    <div class="direita">
+    <div class="direita" alt="A parte direta do banner mostra a foto de uma familia sorrindo.">
     </div>
   </div>
-
   <div class="bannerMobile">
-    <div class="fundo">
+    <div class="fundo" alt="O banner mostra uma familia sorrindo.">
       <h9>Recupere seu sorriso</h9><br>
       <h9>Agende uma visita!</h9><br>
-      <button data-target="agendamento-modal" class="modal-trigger waves-effect waves-light btn blue">Agendamento</button>
+      <button data-target="agendamento-modal"
+        class="modal-trigger waves-effect waves-light btn blue" alt="Fazer um agendamento">Agendamento</button>
     </div>
   </div>
   <!-- FIM DO BANNER -->
-  <a id="button"></a> <!--BOTÃO DE VOLTAR AO TOPO-->
+  <a id="button"></a>
+  <!--BOTÃO DE VOLTAR AO TOPO-->
   <!-- SOBRE -->
   <div class="row">
     <div class="col s12 m2"></div>
@@ -137,7 +137,7 @@
           <div class="carousel">
             <div class="carousel-item card" href="#one!">
               <div class="card-image">
-                <img src="img/doctor1.jpg">
+                <img src="img/doctor1.jpg" alt="Foto da nossa dentista Infantojuvenil, Doutora Alicia Ashford.">
               </div>
               <div class="card-content">
                 <span class="card-title">Dra. Alicia Ashford</span>
@@ -147,7 +147,7 @@
             </div>
             <div class="carousel-item card" href="#two!">
               <div class="card-image">
-                <img src="img/doctor2.jpg">
+                <img src="img/doctor2.jpg" alt="Foto da nossa cirurgiã dentista, Doutora Juliana Valentine.">
               </div>
               <div class="card-content">
                 <span class="card-title">Dra. Juliana Valentine</span>
@@ -157,7 +157,7 @@
             </div>
             <div class="carousel-item card" href="#three!">
               <div class="card-image">
-                <img src="img/doctor3.jpg">
+                <img src="img/doctor3.jpg" alt="Foto do fundador da clínica e dentista geral, Doutor Phineas Nazim.">
               </div>
               <div class="card-content">
                 <span class="card-title">Dr. Phineas Nazin</span>
@@ -222,12 +222,13 @@
   <div id="clientes" class="gallery js-flickity">
     <div class="gallery-cell center-align">
       <p>O melhor atendimento que eu ja tive em anos!</p>
-      <p>- Elliot Alderson</p></div>
+      <p>- Elliot Alderson</p>
+    </div>
     <div class="gallery-cell center-align">
       <p>Já recomendei para minha familia e amigos. O Dr. Nazim é fantástico.</p>
       <p>- Ikki de Fênix</p>
-  </div>
-  <div class="gallery-cell center-align">
+    </div>
+    <div class="gallery-cell center-align">
       <p>As crianças adoraram. Realmente me surpreendi com o atendimento e profissionalismo.</p>
       <p>- Susie Q</p>
     </div>
@@ -241,57 +242,57 @@
     </div>
   </div>
   <!-- FIM DO CAROUSEL DE CLIENTES-->
-
   <!-- FOOTER -->
   <div class="divisor">
     <div class="tooth-icon">
-    <img src="https://cdn3.iconfinder.com/data/icons/dental-premium-color-symbol/91/Dental_-_Tooth_-_Dentist_-_Dentistry_11-512.png" width="48" height="48">      
+      <img
+        src="https://cdn3.iconfinder.com/data/icons/dental-premium-color-symbol/91/Dental_-_Tooth_-_Dentist_-_Dentistry_11-512.png"
+        width="48" height="48">
     </div>
-  <footer id="contatos" class="page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col l4 s12">
-          <h5 class="white-text">Fale conosco</h5>
-          <p class="grey-text text-lighten-4">Venha conhecer o local e fazer um orçamento, aguardamos você!</p>
-          <p>
-            Cirurgião dentista <br>
-            Registro da clínica: EPAI 6969 <br>
-            Responsável técnico: Dr. Phienas Nazin <br>
-            CRO responsável técnico: 6666 DF
-          </p>
-        </div>
-        <div class="col l4 s12">
-          <h5 class="white-text">Contato</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">SHCES Qd 105 Bloco B</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">61 4002 8922</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">cruzeirospabucal@fakegmail.com</a></li>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.0983734782576!2d-47.945257335496706!3d-15.798766077270525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a305e0d0c1adf%3A0x2b632b2446918b0d!2sSHCES%20Q%20305%20Bloco%20F!5e0!3m2!1spt-BR!2sbr!4v1602387865422!5m2!1spt-BR!2sbr"
-              width="200" height="100" frameborder="0" style="border-radius: 10px;" allowfullscreen=""
-              aria-hidden="false" tabindex="0"></iframe>
-          </ul>
-        </div>
-        <div class="col l4 s12">
-          <h5 class="white-text">Planos aceitos</h5>
-          <img style="width: 120px; height:  auto;" src="img/portoseguro.png" alt="">
-          <img style="width: 120px;height: 50px;" src="img/bradesco.png" alt="">
-          <img style="width: 120px;" src="img/unimed.png" alt="">
-          <img style="width: 120px;" src="img/amil.png" alt="">
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
+    <footer id="contatos" class="page-footer">
       <div class="container">
-        © 2020 Cruzeiro Spa Bucal<div>Logo made by <a href="https://www.designevo.com/logo-maker/"
-            title="Free Online Logo Maker">DesignEvo free logo creator</a></div>
+        <div class="row">
+          <div class="col l4 s12">
+            <h5 class="white-text">Fale conosco</h5>
+            <p class="grey-text text-lighten-4">Venha conhecer o local e fazer um orçamento, aguardamos você!</p>
+            <p>
+              Cirurgião dentista <br>
+              Registro da clínica: EPAI 6969 <br>
+              Responsável técnico: Dr. Phienas Nazin <br>
+              CRO responsável técnico: 6666 DF
+            </p>
+          </div>
+          <div class="col l4 s12">
+            <h5 class="white-text">Contato</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">SHCES Qd 105 Bloco B</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">61 4002 8922</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">cruzeirospabucal@fakegmail.com</a></li>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.0983734782576!2d-47.945257335496706!3d-15.798766077270525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a305e0d0c1adf%3A0x2b632b2446918b0d!2sSHCES%20Q%20305%20Bloco%20F!5e0!3m2!1spt-BR!2sbr!4v1602387865422!5m2!1spt-BR!2sbr"
+                width="200" height="100" frameborder="0" style="border-radius: 10px;" allowfullscreen=""
+                aria-hidden="false" tabindex="0"></iframe>
+            </ul>
+          </div>
+          <div class="col l4 s12">
+            <h5 class="white-text">Planos aceitos</h5>
+            <img style="width: 120px; height:  auto;" src="img/portoseguro.png" alt="Porto Seguro Odonto">
+            <img style="width: 120px;height: 50px;" src="img/bradesco.png" alt="Bradesco Odonto">
+            <img style="width: 120px;" src="img/unimed.png" alt="Unimed Odonto">
+            <img style="width: 120px;" src="img/amil.png" alt="Amil Odonto">
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
-  <!-- FIM DO FOOTER -->
-  <!--JavaScript -->
-  <script src="flickity/flickity.pkgd.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2020 Cruzeiro Spa Bucal<div>Logo feita com <a href="https://www.designevo.com/logo-maker/"
+              title="Free Online Logo Maker">DesignEvo</a></div>
+        </div>
+      </div>
+    </footer>
+    <!-- FIM DO FOOTER -->
+    <!--JavaScript -->
+    <script src="flickity/flickity.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
-
 </html>

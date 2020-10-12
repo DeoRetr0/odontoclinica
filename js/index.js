@@ -1,17 +1,17 @@
 $(document).ready(function () {
-//materialize inits
+  //materialize inits
   $(".collapsible").collapsible();
   $(".sidenav").sidenav();
   $(".carousel").carousel();
-  $('.modal').modal();
-  $('select').formSelect();
+  $(".modal").modal();
+  $("select").formSelect();
 
   var elem = document.querySelector(".collapsible.expandable");
   var instance = M.Collapsible.init(elem, {
     accordion: false,
   });
 
-// back to top
+  // back to top
   var btn = $("#button");
 
   $(window).scroll(function () {
@@ -27,23 +27,20 @@ $(document).ready(function () {
     $("html, body").animate({ scrollTop: 0 }, "300");
   });
 
-
-// smooth scrolling
-$("a").on('click', function(event) {
-  if (this.hash !== "") {
-    event.preventDefault();
-    var hash = this.hash;
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 800, function(){
-      window.location.hash = hash;
-    });
-  }
+  // smooth scrolling
+  $("a").on("click", function (event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top,
+        },
+        800,
+        function () {
+          window.location.hash = hash;
+        }
+      );
+    }
   });
-});
-
-$('.main-gallery').flickity({
-  // options
-  cellAlign: 'left',
-  contain: true
 });
