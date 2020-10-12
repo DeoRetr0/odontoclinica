@@ -11,6 +11,7 @@
 
 body {
   background-color: whitesmoke;
+  scroll-behavior: smooth;
   font-family: "Inria Sans", sans-serif;
 }
 
@@ -40,7 +41,7 @@ margin: 30px 20px 0px 20px;
   padding: 7px;
 }
 
-/* BANNER + BANNER MOBILE*/
+/* BANNER */
 
 .banner {
   position: relative;
@@ -70,32 +71,6 @@ margin: 30px 20px 0px 20px;
   -webkit-clip-path: polygon(40% 0, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(35% 0, 100% 0%, 100% 100%, 0% 100%);
 }
-
-@media only screen and (max-width: 425px) {
-  .navbar-fixed img{
-    height: 55px;
-    margin-left: 0;
-  }
-  .banner{
-    display: none;
-  }
-  .bannerMobile{
-    display: initial;
-  }
-  .fundo{
-    background-image: url("bannerFundo2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-size: medium;
-    font-weight: bolder;
-    color: #ecf0f1;
-    padding: 20px;
-  }
-  .fundo button{
-    box-shadow: 5px 10px #888888;
-    margin: 10px;
-  }
-}
 .esquerda h1, h2 {
   color: #ecf0f1;
   font-weight: bolder;
@@ -122,6 +97,7 @@ margin: 30px 20px 0px 20px;
 #meio-do-site{
   background-color: #ecf0f1;
   padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 .titulo {
@@ -166,8 +142,8 @@ margin: 30px 20px 0px 20px;
 #button {
   display: inline-block;
   background-color: #2c3e50;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   text-align: center;
   border-radius: 4px;
   position: fixed;
@@ -180,12 +156,12 @@ margin: 30px 20px 0px 20px;
   z-index: 1000;
 }
 #button::after {
-  content: "ᐃ";
+  content: "ᐃ ";
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
+  font-size: 1.5em;
+  line-height: 30px;
   color: #fff;
 }
 #button:hover {
@@ -198,4 +174,97 @@ margin: 30px 20px 0px 20px;
 #button.show {
   opacity: 1;
   visibility: visible;
+}
+
+/* Carousel de Clientes */
+
+.gallery {
+  background: #2979ff;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.gallery-cell {
+  width: 100%;
+  height: 150px;
+  margin-right: 10px;
+  background: #2979ff;
+  margin-top: 50px;
+}
+.gallery-cell p{
+  padding: 5px;
+}
+
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+}
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+}
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+
+.flickity-page-dots {
+  bottom: 0px;
+}
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+
+
+/*DIVISOR*/
+.divisor {position:relative;
+  top:20px;  
+}
+.tooth-icon{position:absolute;
+top:-30px;
+left: 48%;
+}
+
+
+@media only screen and (max-width: 812px) {
+  .navbar-fixed img{
+    height: 55px;
+    margin-left: 0;
+  }
+  .banner{
+    display: none;
+  }
+  .bannerMobile{
+    display: initial;
+  }
+  .fundo{
+    background-image: url("bannerFundo2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: medium;
+    font-weight: bolder;
+    color: #ecf0f1;
+    padding: 20px;
+  }
+  .fundo button{
+    box-shadow: 5px 10px #888888;
+    margin: 10px;
+  }
+  .flower-icon{
+    right: 50%;
+  }
 }
